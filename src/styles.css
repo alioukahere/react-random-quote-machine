@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(to right, #40e0d0, #1bbfaf);
+  font-family: "Source Code Pro";
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  max-width: 450px;
+}
+
+.joke p.setup {
+  text-indent: 3rem;
+  position: relative;
+}
+
+.joke p.setup::before {
+  content: open-quote;
+  font-size: 5rem;
+  font-weight: bold;
+  position: absolute;
+  left: -4rem;
+  top: -2rem;
+  color: #1bbfaf;
+}
+
+.joke p {
+  font-size: 1.3rem;
+}
+
+.joke p.punchline {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #40e0d0, #1bbfaf);
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.btn:focus,
+.btn:active {
+  border: none;
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn.tweet {
+  float: right;
+}
